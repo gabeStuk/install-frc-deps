@@ -1,0 +1,36 @@
+name: Build Extension
+
+on:
+    push:
+        branches:
+            - 'main'
+    pull_request:
+    workflow_dispatch:
+
+env:
+    VERSION: 0.0.1
+
+jobs:
+    build:
+        permissions: write-all
+        runs-on: windows-latest
+
+        steps: 
+            - name: "[1/5] Checkout branch"
+              uses: actions/checkout@v2
+            - name: "[2/5] Set up Node.js"
+              uses: actions/setup-node@v4
+              with:
+                node-version: 23.3.0
+            - name: "[3/5] Install node deps"
+              run: |
+                npm i -g @vscode/vsce
+                npm i --save
+            - name: "[4/5] Build Package"
+              run: |
+                vsce package
+            - name: "[5/5] Upload Package"
+              uses: actions/upload-artifact@v3
+              with:
+                name: install-frc-deps-0.0.1
+                path: install-frc-deps-0.0.1.vsix
