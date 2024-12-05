@@ -16,7 +16,7 @@
     "commands": [
       {
         "command": "install-frc-deps.install-deps",
-        "title": "Install Dependencies"
+        "title": "install-frc-deps: Install Dependencies"
       }
     ]
   },
