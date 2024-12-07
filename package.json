@@ -1,8 +1,9 @@
 {
   "name": "install-frc-deps",
   "displayName": "install-frc-deps",
+  "publisher": "sponge2",
   "description": "Installs FRC deps for 4028",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.85.1"
   },
@@ -17,6 +18,14 @@
       {
         "command": "install-frc-deps.install-deps",
         "title": "install-frc-deps: Install Dependencies"
+      },
+      {
+        "command": "install-frc-deps.af-gradle",
+        "title": "install-frc-deps: Add autoformatting to build.gradle"
+      },
+      {
+        "command": "install-frc-deps.beaks",
+        "title": "install-frc-deps: Beak Converter"
       }
     ]
   },
@@ -45,6 +54,8 @@
     "wpilibsuite.vscode-wpilib"
   ],
   "dependencies": {
+    "@types/cssesc": "^3.0.2",
+    "cssesc": "^3.0.0",
     "mkdirp": "^3.0.1",
     "node-html-parser": "^6.1.13",
     "vscode-wpilibapi": "^2021.1.1"
