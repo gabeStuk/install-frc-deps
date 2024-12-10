@@ -7,3 +7,6 @@ This is the main command of the extension, which pulls the dependencies listed o
 This command is a merge of another previously made extension that uses [Spotless](https://github.com/diffplug/spotless/) to apply the Java autoformatter to every java file when the code compiles.
 ### Beak Converter (`install-frc-deps.beaks`)
 This command, based on a season running joke, converts between the fictitious currency "Beaks" (1 Beak = Price of a [Limelight](https://limelightvision.io/collections/products)) and $USD.
+## How do I install?
+Builds of this extension can be accessed from [Actions](https://github.com/gabeStuk/install-frc-deps/actions), where the latest passing build should be working:
+[![Build Extension](https://github.com/gabeStuk/install-frc-deps/actions/workflows/extensionBuild.yml/badge.svg)](https://github.com/gabeStuk/install-frc-deps/actions/workflows/extensionBuild.yml)
