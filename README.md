@@ -10,3 +10,6 @@ This command, based on a season running joke, converts between the fictitious cu
 ## How do I install?
 Builds of this extension can be accessed from [Actions](https://github.com/gabeStuk/install-frc-deps/actions), where the latest passing build should be working:
 [![Build Extension](https://github.com/gabeStuk/install-frc-deps/actions/workflows/extensionBuild.yml/badge.svg)](https://github.com/gabeStuk/install-frc-deps/actions/workflows/extensionBuild.yml)
+After downloading and unzipping the file, you can use the three dots at the top of the "extensions" tab and then click "Install from VSIX" and then select the file to install the extension.
+[This](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix) official page has additional details
+![image](https://github.com/user-attachments/assets/1e717a05-85b0-4fc9-8b9f-9d81d09b3a2c)
