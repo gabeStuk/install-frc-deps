@@ -1,5 +1,6 @@
 {
   "name": "install-frc-deps",
+  "icon": "icon.png",
   "displayName": "install-frc-deps",
   "publisher": "sponge2",
   "description": "Installs FRC deps for 4028",
