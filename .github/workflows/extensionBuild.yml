@@ -32,5 +32,5 @@ jobs:
             - name: "[5/5] Upload Package"
               uses: actions/upload-artifact@v3
               with:
-                name: install-frc-deps-0.0.1
-                path: install-frc-deps-0.0.1.vsix
+                name: install-frc-deps-${{env.VERSION}}
+                path: install-frc-deps-${{env.VERSION}}.vsix
